@@ -11,7 +11,7 @@ public class Boletin3_1 {
         consumo1.setPGas(1.57f);
         Consumo consumo2=new Consumo(10f,5f,10f,10f);
         System.out.println("Consumo medio ="+ consumo2.consumoMedio());
-        consumo2.setL(20);
+        consumo2.setL(20f);
         System.out.println("Velocidade media "+ consumo2.getVMed());
     }
     
