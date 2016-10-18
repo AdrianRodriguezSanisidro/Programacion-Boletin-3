@@ -24,25 +24,25 @@ public class Consumo {
     this.pGas=pGas;
     }
     public float getKms(){
-        return this.kms;
+        return kms;
 }
     public void setKms(float kms){
         this.kms=kms;
     }
     public float getL(){
-        return this.l;
+        return l;
     }
     public void setL(float l){
         this.l=l;
     }
     public float getVMed(){
-        return this.vMed;
+        return vMed;
     }
     public void setVMed(float vMed){
         this.vMed=vMed;
     }
     public float getPGas(){
-        return this.pGas;
+        return pGas;
     }
     public void setPGas(float pGas){
         this.pGas=pGas;
@@ -54,12 +54,15 @@ public class Consumo {
     }
     public float consumoMedio(){
         float consumoMedio;
-        consumoMedio=this.l/(this.kms/100);
+        consumoMedio=l/(kms/100);
         return consumoMedio;
     }
     public float consumoEuros(){
         float consumoEuros;
-        consumoEuros=(this.l/(this.kms/100))*this.pGas;
+        consumoEuros=(l/(kms/100))*this.pGas;
                 return consumoEuros;
+    }
+    public void visualizar(){
+        System.out.println("Kms ="+kms+ "litros ="+ l+ "Velocidade Media =" +vMed +"Prezo da gasolina ="+pGas);
     }
 }
